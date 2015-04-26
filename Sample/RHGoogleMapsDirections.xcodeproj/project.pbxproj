@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00DCF591AECC5A60074F6FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF581AECC5A60074F6FD /* AppDelegate.swift */; };
+		B00DCF5B1AECC5A60074F6FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF5A1AECC5A60074F6FD /* ViewController.swift */; };
+		B00DCF5E1AECC5A60074F6FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00DCF5C1AECC5A60074F6FD /* Main.storyboard */; };
+		B00DCF601AECC5A60074F6FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00DCF5F1AECC5A60074F6FD /* Images.xcassets */; };
+		B00DCF631AECC5A60074F6FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00DCF611AECC5A60074F6FD /* LaunchScreen.xib */; };
+		B00DCF6F1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF6E1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift */; };
+		B00DCF7B1AECC6A30074F6FD /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF7A1AECC6A30074F6FD /* Alamofire.swift */; };
+		B00DCF7D1AECC6CC0074F6FD /* RHDirectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF7C1AECC6CC0074F6FD /* RHDirectionRouter.swift */; };
+		B00DCF7F1AECC98A0074F6FD /* RHDirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF7E1AECC98A0074F6FD /* RHDirectionManager.swift */; };
+		B00DCF811AECC9FA0074F6FD /* RHLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF801AECC9FA0074F6FD /* RHLocation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00DCF691AECC5A60074F6FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B00DCF4B1AECC5A60074F6FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00DCF521AECC5A60074F6FD;
+			remoteInfo = RHGoogleMapsDirections;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B00DCF531AECC5A60074F6FD /* RHGoogleMapsDirections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHGoogleMapsDirections.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00DCF571AECC5A60074F6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00DCF581AECC5A60074F6FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B00DCF5A1AECC5A60074F6FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B00DCF5D1AECC5A60074F6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B00DCF5F1AECC5A60074F6FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B00DCF621AECC5A60074F6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B00DCF681AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHGoogleMapsDirectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00DCF6D1AECC5A60074F6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00DCF6E1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHGoogleMapsDirectionsTests.swift; sourceTree = "<group>"; };
+		B00DCF7A1AECC6A30074F6FD /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		B00DCF7C1AECC6CC0074F6FD /* RHDirectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionRouter.swift; sourceTree = SOURCE_ROOT; };
+		B00DCF7E1AECC98A0074F6FD /* RHDirectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionManager.swift; sourceTree = SOURCE_ROOT; };
+		B00DCF801AECC9FA0074F6FD /* RHLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLocation.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B00DCF501AECC5A60074F6FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00DCF651AECC5A60074F6FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B00DCF4A1AECC5A60074F6FD = {
+			isa = PBXGroup;
+			children = (
+				B00DCF551AECC5A60074F6FD /* RHGoogleMapsDirections */,
+				B00DCF6B1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests */,
+				B00DCF541AECC5A60074F6FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B00DCF541AECC5A60074F6FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF531AECC5A60074F6FD /* RHGoogleMapsDirections.app */,
+				B00DCF681AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B00DCF551AECC5A60074F6FD /* RHGoogleMapsDirections */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF791AECC6A30074F6FD /* Libraries */,
+				B00DCF781AECC6080074F6FD /* Source Code */,
+				B00DCF581AECC5A60074F6FD /* AppDelegate.swift */,
+				B00DCF5A1AECC5A60074F6FD /* ViewController.swift */,
+				B00DCF5C1AECC5A60074F6FD /* Main.storyboard */,
+				B00DCF5F1AECC5A60074F6FD /* Images.xcassets */,
+				B00DCF611AECC5A60074F6FD /* LaunchScreen.xib */,
+				B00DCF561AECC5A60074F6FD /* Supporting Files */,
+			);
+			path = RHGoogleMapsDirections;
+			sourceTree = "<group>";
+		};
+		B00DCF561AECC5A60074F6FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF571AECC5A60074F6FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B00DCF6B1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF6E1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift */,
+				B00DCF6C1AECC5A60074F6FD /* Supporting Files */,
+			);
+			path = RHGoogleMapsDirectionsTests;
+			sourceTree = "<group>";
+		};
+		B00DCF6C1AECC5A60074F6FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF6D1AECC5A60074F6FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B00DCF781AECC6080074F6FD /* Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF7C1AECC6CC0074F6FD /* RHDirectionRouter.swift */,
+				B00DCF7E1AECC98A0074F6FD /* RHDirectionManager.swift */,
+				B00DCF801AECC9FA0074F6FD /* RHLocation.swift */,
+			);
+			path = "Source Code";
+			sourceTree = "<group>";
+		};
+		B00DCF791AECC6A30074F6FD /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B00DCF7A1AECC6A30074F6FD /* Alamofire.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B00DCF521AECC5A60074F6FD /* RHGoogleMapsDirections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00DCF721AECC5A60074F6FD /* Build configuration list for PBXNativeTarget "RHGoogleMapsDirections" */;
+			buildPhases = (
+				B00DCF4F1AECC5A60074F6FD /* Sources */,
+				B00DCF501AECC5A60074F6FD /* Frameworks */,
+				B00DCF511AECC5A60074F6FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHGoogleMapsDirections;
+			productName = RHGoogleMapsDirections;
+			productReference = B00DCF531AECC5A60074F6FD /* RHGoogleMapsDirections.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B00DCF671AECC5A60074F6FD /* RHGoogleMapsDirectionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00DCF751AECC5A60074F6FD /* Build configuration list for PBXNativeTarget "RHGoogleMapsDirectionsTests" */;
+			buildPhases = (
+				B00DCF641AECC5A60074F6FD /* Sources */,
+				B00DCF651AECC5A60074F6FD /* Frameworks */,
+				B00DCF661AECC5A60074F6FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00DCF6A1AECC5A60074F6FD /* PBXTargetDependency */,
+			);
+			name = RHGoogleMapsDirectionsTests;
+			productName = RHGoogleMapsDirectionsTests;
+			productReference = B00DCF681AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B00DCF4B1AECC5A60074F6FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tinyworld;
+				TargetAttributes = {
+					B00DCF521AECC5A60074F6FD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B00DCF671AECC5A60074F6FD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B00DCF521AECC5A60074F6FD;
+					};
+				};
+			};
+			buildConfigurationList = B00DCF4E1AECC5A60074F6FD /* Build configuration list for PBXProject "RHGoogleMapsDirections" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B00DCF4A1AECC5A60074F6FD;
+			productRefGroup = B00DCF541AECC5A60074F6FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B00DCF521AECC5A60074F6FD /* RHGoogleMapsDirections */,
+				B00DCF671AECC5A60074F6FD /* RHGoogleMapsDirectionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B00DCF511AECC5A60074F6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00DCF5E1AECC5A60074F6FD /* Main.storyboard in Resources */,
+				B00DCF631AECC5A60074F6FD /* LaunchScreen.xib in Resources */,
+				B00DCF601AECC5A60074F6FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00DCF661AECC5A60074F6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B00DCF4F1AECC5A60074F6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00DCF7B1AECC6A30074F6FD /* Alamofire.swift in Sources */,
+				B00DCF7F1AECC98A0074F6FD /* RHDirectionManager.swift in Sources */,
+				B00DCF811AECC9FA0074F6FD /* RHLocation.swift in Sources */,
+				B00DCF5B1AECC5A60074F6FD /* ViewController.swift in Sources */,
+				B00DCF7D1AECC6CC0074F6FD /* RHDirectionRouter.swift in Sources */,
+				B00DCF591AECC5A60074F6FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00DCF641AECC5A60074F6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00DCF6F1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00DCF6A1AECC5A60074F6FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00DCF521AECC5A60074F6FD /* RHGoogleMapsDirections */;
+			targetProxy = B00DCF691AECC5A60074F6FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B00DCF5C1AECC5A60074F6FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00DCF5D1AECC5A60074F6FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B00DCF611AECC5A60074F6FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00DCF621AECC5A60074F6FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B00DCF701AECC5A60074F6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B00DCF711AECC5A60074F6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B00DCF731AECC5A60074F6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHGoogleMapsDirections/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B00DCF741AECC5A60074F6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHGoogleMapsDirections/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B00DCF761AECC5A60074F6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RHGoogleMapsDirectionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHGoogleMapsDirections.app/RHGoogleMapsDirections";
+			};
+			name = Debug;
+		};
+		B00DCF771AECC5A60074F6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RHGoogleMapsDirectionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHGoogleMapsDirections.app/RHGoogleMapsDirections";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B00DCF4E1AECC5A60074F6FD /* Build configuration list for PBXProject "RHGoogleMapsDirections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00DCF701AECC5A60074F6FD /* Debug */,
+				B00DCF711AECC5A60074F6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00DCF721AECC5A60074F6FD /* Build configuration list for PBXNativeTarget "RHGoogleMapsDirections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00DCF731AECC5A60074F6FD /* Debug */,
+				B00DCF741AECC5A60074F6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00DCF751AECC5A60074F6FD /* Build configuration list for PBXNativeTarget "RHGoogleMapsDirectionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00DCF761AECC5A60074F6FD /* Debug */,
+				B00DCF771AECC5A60074F6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B00DCF4B1AECC5A60074F6FD /* Project object */;
+}
