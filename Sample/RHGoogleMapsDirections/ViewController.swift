@@ -9,16 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    // MARK: - View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: RHDirectionManager.Static.GetPathDidSuccessNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: RHDirectionManager.Static.GetPathDidFailNotification, object: nil)
+    }
 
+    
+    // MARK: - Setup
+    
     func setup() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "getPathDidSuccessNotification:", name: RHDirectionManager.Static.GetPathDidSuccessNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "getPathDidFailNotification:", name: RHDirectionManager.Static.GetPathDidFailNotification, object: nil)
+        
         let start = RHLocation(latitude: 25.046254, longitude: 121.517532)
         let end = RHLocation(latitude: 25.0339031, longitude: 121.5645098)
-        RHDirectionManager.sharedManager.getWayPointsFromLocation(start, toLocation: end)
+        RHDirectionManager.sharedManager.getPathFromLocation(start, toLocation: end)
+    }
+    
+    
+    // MARK: - Action
+    
+    private dynamic func getPathDidSuccessNotification(sender: AnyObject?) {
+        if let path = RHDirectionManager.sharedManager.path {
+            println(path)
+        }
+    }
+    
+    private dynamic func getPathDidFailNotification(sender: AnyObject?) {
+        println("Failed to get path.")
     }
 }
 
