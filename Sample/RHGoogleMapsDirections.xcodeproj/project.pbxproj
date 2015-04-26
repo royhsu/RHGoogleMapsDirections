@@ -14,9 +14,9 @@
 		B00DCF631AECC5A60074F6FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00DCF611AECC5A60074F6FD /* LaunchScreen.xib */; };
 		B00DCF6F1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF6E1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift */; };
 		B00DCF7B1AECC6A30074F6FD /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF7A1AECC6A30074F6FD /* Alamofire.swift */; };
-		B00DCF861AECD0000074F6FD /* RHDirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF831AECD0000074F6FD /* RHDirectionManager.swift */; };
-		B00DCF871AECD0000074F6FD /* RHDirectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF841AECD0000074F6FD /* RHDirectionRouter.swift */; };
-		B00DCF881AECD0000074F6FD /* RHLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCF851AECD0000074F6FD /* RHLocation.swift */; };
+		B00DCFAD1AECDA020074F6FD /* RHDirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCFAA1AECDA020074F6FD /* RHDirectionManager.swift */; };
+		B00DCFAE1AECDA020074F6FD /* RHDirectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCFAB1AECDA020074F6FD /* RHDirectionRouter.swift */; };
+		B00DCFAF1AECDA020074F6FD /* RHLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DCFAC1AECDA020074F6FD /* RHLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +41,10 @@
 		B00DCF6D1AECC5A60074F6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00DCF6E1AECC5A60074F6FD /* RHGoogleMapsDirectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHGoogleMapsDirectionsTests.swift; sourceTree = "<group>"; };
 		B00DCF7A1AECC6A30074F6FD /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		B00DCF831AECD0000074F6FD /* RHDirectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionManager.swift; sourceTree = "<group>"; };
-		B00DCF841AECD0000074F6FD /* RHDirectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionRouter.swift; sourceTree = "<group>"; };
-		B00DCF851AECD0000074F6FD /* RHLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLocation.swift; sourceTree = "<group>"; };
 		B00DCF8B1AECD0890074F6FD /* RHGoogleMapsDirections-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RHGoogleMapsDirections-Bridging-Header.h"; sourceTree = "<group>"; };
+		B00DCFAA1AECDA020074F6FD /* RHDirectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionManager.swift; sourceTree = "<group>"; };
+		B00DCFAB1AECDA020074F6FD /* RHDirectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDirectionRouter.swift; sourceTree = "<group>"; };
+		B00DCFAC1AECDA020074F6FD /* RHLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B00DCF791AECC6A30074F6FD /* Libraries */,
-				B00DCF821AECD0000074F6FD /* Source Code */,
+				B00DCFA91AECDA020074F6FD /* RHGoogleMapsDirections */,
 				B00DCF581AECC5A60074F6FD /* AppDelegate.swift */,
 				B00DCF5A1AECC5A60074F6FD /* ViewController.swift */,
 				B00DCF8B1AECD0890074F6FD /* RHGoogleMapsDirections-Bridging-Header.h */,
@@ -132,15 +132,15 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		B00DCF821AECD0000074F6FD /* Source Code */ = {
+		B00DCFA91AECDA020074F6FD /* RHGoogleMapsDirections */ = {
 			isa = PBXGroup;
 			children = (
-				B00DCF831AECD0000074F6FD /* RHDirectionManager.swift */,
-				B00DCF841AECD0000074F6FD /* RHDirectionRouter.swift */,
-				B00DCF851AECD0000074F6FD /* RHLocation.swift */,
+				B00DCFAA1AECDA020074F6FD /* RHDirectionManager.swift */,
+				B00DCFAB1AECDA020074F6FD /* RHDirectionRouter.swift */,
+				B00DCFAC1AECDA020074F6FD /* RHLocation.swift */,
 			);
-			name = "Source Code";
-			path = "../../Source Code";
+			name = RHGoogleMapsDirections;
+			path = ../../RHGoogleMapsDirections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00DCF7B1AECC6A30074F6FD /* Alamofire.swift in Sources */,
-				B00DCF861AECD0000074F6FD /* RHDirectionManager.swift in Sources */,
-				B00DCF881AECD0000074F6FD /* RHLocation.swift in Sources */,
+				B00DCFAD1AECDA020074F6FD /* RHDirectionManager.swift in Sources */,
+				B00DCFAF1AECDA020074F6FD /* RHLocation.swift in Sources */,
 				B00DCF5B1AECC5A60074F6FD /* ViewController.swift in Sources */,
 				B00DCF591AECC5A60074F6FD /* AppDelegate.swift in Sources */,
-				B00DCF871AECD0000074F6FD /* RHDirectionRouter.swift in Sources */,
+				B00DCFAE1AECDA020074F6FD /* RHDirectionRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
