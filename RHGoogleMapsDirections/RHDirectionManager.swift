@@ -10,6 +10,13 @@ import Foundation
 
 class RHDirectionManager {
     
+    enum Mode: String {
+        case Driving = "driving"
+        case Walking = "walking"
+        case Bicycling = "bicycling"
+        case Transit = "transit"
+    }
+    
     struct Static {
         static let GetPathDidSuccessNotification = "GetPathDidSuccessNotification"
         static let GetPathDidFailNotification = "GetPathDidFailNotification"
@@ -21,13 +28,15 @@ class RHDirectionManager {
         }
         return Static.instance
     }
+    var mode: Mode = .Driving
     var path: String?
     
     func getPathFromLocation(location: RHLocation, toLocation: RHLocation) {
         let parameters = [
             "origin": "\(location.latitude), \(location.longitude)",
             "destination": "\(toLocation.latitude), \(toLocation.longitude)",
-            "sensor": "true"
+            "sensor": "true",
+            "mode": mode.rawValue
         ]
         
         request(RHDirectionRouter.Directions(parameters: parameters)).responseJSON(options: .allZeros) { _, _, data, error in

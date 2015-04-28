@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         
         let start = RHLocation(latitude: 25.046254, longitude: 121.517532)
         let end = RHLocation(latitude: 25.0339031, longitude: 121.5645098)
+        
+        // Specify what the mode you want. (Default is .Driving)
+        RHDirectionManager.sharedManager.mode = .Walking
         RHDirectionManager.sharedManager.getPathFromLocation(start, toLocation: end)
     }
     
