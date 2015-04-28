@@ -10,11 +10,20 @@ import Foundation
 
 class RHDirectionManager {
     
-    enum Mode: String {
-        case Driving = "driving"
-        case Walking = "walking"
-        case Bicycling = "bicycling"
-        case Transit = "transit"
+    enum Mode: Int, Printable {
+        case Driving
+        case Walking
+        case Bicycling
+        case Transit
+        
+        var description: String {
+            switch self {
+            case .Driving: return "driving"
+            case .Walking: return "walking"
+            case .Bicycling: return "bicycling"
+            case .Transit: return "transit"
+            }
+        }
     }
     
     struct Static {
@@ -36,7 +45,7 @@ class RHDirectionManager {
             "origin": "\(location.latitude), \(location.longitude)",
             "destination": "\(toLocation.latitude), \(toLocation.longitude)",
             "sensor": "true",
-            "mode": mode.rawValue
+            "mode": mode.description
         ]
         
         request(RHDirectionRouter.Directions(parameters: parameters)).responseJSON(options: .allZeros) { _, _, data, error in
